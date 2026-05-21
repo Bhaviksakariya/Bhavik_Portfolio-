@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background-color: rgb(8, 165, 113);
+}
+
+body {
+    background-color: #fcfcfc;
+    color: #2d3436;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 16px 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.logo span {
+    color: var(--background-color);
+
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+
+    margin-left: 35px;
+
+
+}
+
+.nav-link a {
+    color: #636e72;
+    text-decoration: none;
+
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+.nav-link a:hover {
+    color: var(--background-color);
+
+}
+
+.code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1350&q=80");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0 10%;
+}
+
+.code-content h1 {
+    letter-spacing: -1px;
+    font-size: 3.5rem;
+    margin: 15px 0px;
+}
+
+.code-content p {
+    font-size: 1.2rem;
+    color: #fcfcfc;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+}
+
+.primary {
+    color: rgb(255, 255, 255);
+    background-color: var(--background-color);
+    border: 2px solid var(--background-color);
+
+}
+
+.primary:hover {
+    color: var(--background-color);
+    background-color: transparent;
+    transform: translateY(-3px);
+}
+
+.secoundry {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-left: 1rem
+}
+
+.secoundry:hover {
+    background-color: #ffffff;
+    color: #636e72;
+    transform: translateY(-3px);
+}
+
+.about {
+    padding: 80px 10%;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: #2d3436;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    border-top: 4px solid var(--background-color);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.procard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    border-top: 4px solid var(--background-color);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.small-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: #e8f8f5;
+    color: var(--background-color);
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.contact-card {
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.contact-card:hover {
+    transform: scale(1.03);
+}
+.contact-card h3{
+font-size: 2rem;
+ color: #2d3436;
+ margin-bottom: 15px;
+}
+.details p{
+    margin: 10px 0;
+}
+.details a{
+    color:#636e72;
+    text-decoration: none;
+}
+.details a:hover{
+    color:var(--background-color);
+  
+}
+.phone a{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--background-color);
+}
+.contact-message {
+
+    margin: 20px 0;
+
+    font-style: italic;
+
+    color: #b2bec3;
+
+}
+
+footer{
+    background: #2d3436;
+    color: #e8f8f5;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+@media (max-width:768px) {
+ .nav-link{
+   display: none;
+ }  
+ 
+ .code h1 {
+        font-size: 2.4rem;
+    }
+    .secoundry{
+          margin-left: 1;
+
+        /* margin-top: 1rem; */
+
+    }
+    .cards , .procard{
+        grid-template-columns: 1fr;
+    }
+}
